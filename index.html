@@ -1,23 +1,50 @@
+<!DOCTYPE html>
 <html>
 <head>
 <title>Home Page</title>
-  <link rel="stylesheet" type="text/css" href="Master Style Sheet.css"/>
-<style type="text/css">
-  h1{position: absolute;left:305px;top:170px;font-size: 60;font-family: sans-serif;}
-</style>
+
+  <link rel="stylesheet" type="text/css" href="Master Style Sheet.css"/> <!-- remove spaces and if you capitolize letters you will need to do the same when you reference them -->
+
+  <style type="text/css">
+      h1 {
+        position: absolute;
+        left:305px;
+        top:170px;
+        font-size: 60;
+        font-family: 
+        sans-serif;
+      }
+  </style>
 </head>
+
 <body>
 <div id="container">
+  
   <h1>A Little Bit of Everything</h1>
-  <img class="Brooklyn Bridge" src="Brooklyn Bridge.png"/>
+  
+    <img class="Brooklyn Bridge" src="Brooklyn Bridge.png" alt="add this to your img tags">
+  
+  <!-- Using "div" tags -->
   <div id="AboutMe"><a href="index.html">About Me</a></div>
+
   <div id="Airbnb"><a href="https://www.airbnb.com/rooms/9556983?guests=2&adults=2&children=0&infants=0&s=Tj8n7aRI" title="Airbnb">Airbnb</a></div>
+
   <div id="Photography">Photography</div>
+
   <div id="Food">Food</div>
+
   <div id="Travel">Travel</div>
+
   <div id="Music">Music</div>
+
   <div id="Brooklyn">Brooklyn</div>
-<div id="Modern Man">
+
+  <!-- Tip: generally you use div to organize other blocks of code in thems rather than leave empty text (you will see why later on)
+  For your items above, this could easily be an unordered list inside just 1 div block, and then you can style it later
+  -->
+
+<div id="Modern Man"> <!-- no spaces in your css selector attributes, this doesn't mean "Modern Man", but the browser engine reads it as 2 separate id's "Modern" and "Man" and your styling won't work-->
+
   <p>
       "I’m a modern man, a man for the millennium, digital and smoke-free, a
       diversified multi-cultural post-modern deconstructionist, politically,
@@ -81,23 +108,30 @@
       there ain’t no doubt, and I’m hangin’ tough, over and out."
   </p>
   <p>
-      <em>Adapted from the great George Carlin.</em>
-</div>
-<footer>
-  <img src="Twitter Icon.jpeg" class="footer"/>
-  <a href="https://www.facebook.com/spencer.wollkind"
-      title="Check out my Facebook Profile">
-  <img src="Facebook Icon.ico" class="footer"
-      alt="Spencer's Facebook Profile"/></a>
-  <a href="https://www.linkedin.com/in/spencer-wollkind-9066a370"
-      title="Check me out on LinkedIn">
-  <img src="LinkedIn.jpg" class="footer"
-      alt="Spencer Wollkind's LinkedIn Profile"/></a>
-  <a href="mailto:sawollkind@gmail.com"
-      title="Email Me">
-  <img src="Gmail Icon.jpeg" class="footer"
-      alt="Email Me"/></a>
-</footer>
-</div>
+
+      <em>Adapted from the great George Carlin.</em> <!-- the browser will render this, but in practice you want to put inline text markup within other blocks...inside of another <p> tag, instead of leaving it alone in the div (again, you will find out why later) -->
+
+</div> <!-- end div "modern-man" -->
+
+  <footer>
+    <img src="Twitter Icon.jpeg" class="footer"/>
+    
+    <a href="https://www.facebook.com/spencer.wollkind"
+        title="Check out my Facebook Profile">
+      <img src="Facebook Icon.ico" class="footer"
+        alt="Spencer's Facebook Profile"/></a>
+    
+    <a href="https://www.linkedin.com/in/spencer-wollkind-9066a370"
+        title="Check me out on LinkedIn">
+      <img src="LinkedIn.jpg" class="footer"
+        alt="Spencer Wollkind's LinkedIn Profile"/></a>
+    
+    <a href="mailto:sawollkind@gmail.com"
+        title="Email Me">
+      <img src="Gmail Icon.jpeg" class="footer"
+        alt="Email Me"/></a>
+  </footer>
+
+</div> <!-- end div "container" -->
 </body>
 </html>
